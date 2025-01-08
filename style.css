@@ -1,0 +1,224 @@
+/* Déclaration des variables de couleur */
+:root {
+    --primary-color: #6A645A;
+    --secondary-color: #E3CD8B;
+    --tertiary-color: #5D7052;
+    --accent-color: #C18845;
+    --light-color: #F0BE86;
+  }
+  
+  /* Importation de la police Google */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  /* Réinitialisation globale */
+  body {
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Google */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    text-align: center;
+     /* Espace entre le logo et le haut de la page */
+  }
+  
+  /* Logo image size */
+  .logo-img {
+    height: 30px; /* Taille de l'image du logo */
+    width: auto; /* Maintien du ratio */
+    padding-right: 20px;
+  }
+  
+  /* Navbar fixe en haut */
+  .navbar {
+    background-color: var(--tertiary-color);
+  }
+  .navbar .nav-link {
+    color: var(--light-color);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .navbar .nav-link:hover {
+    color: var(--accent-color)
+  }
+  #content {
+    padding-top: 50px;
+     /* Compense la barre de navigation fixe */
+  }
+  
+  
+  /* Section principale avec image de fond */
+  .hero-section {
+    height: 100vh;
+    background: url('images/pexels-kaip-996329.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-top: 60px; /* Compense la navbar fixe */
+  }
+  
+  /* Overlay sombre pour améliorer la lisibilité du texte */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrissement de l'image */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .animated-title {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeInDown 1.5s;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: var(--light-color); /* Couleur légère pour le sous-titre */
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    background-color: var(--tertiary-color); /* Couleur tertiaire pour le bouton */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: var(--accent-color); /* Couleur d'accent au survol */
+  }
+  
+  /* Footer */
+  footer {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  footer a {
+    color: #E3CD8B;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  footer a:hover {
+    color: #F0BE86;
+  }
+  
+  footer .btn-outline-light {
+    border-color: #E3CD8B;
+    color: #E3CD8B;
+  }
+  
+  footer .btn-outline-light:hover {
+    background-color: #E3CD8B;
+    color: #000;
+  }
+  
+  
+  /* Animation pour les titres */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-title {
+    animation: fadeInDown 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Couleur secondaire pour le texte des sections */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+  }
+  
+  /* Liens hover */
+  a:hover {
+    color: var(--accent-color); /* Accentuation des liens au survol */
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    transition: transform 0.5s;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .card-title {
+    color: #5D7052;
+  }
+
+  .card-text {
+    color: #6A645A;
+  }
+
+  .card-footer {
+    background-color: #E3CD8B;
+    border-top: none;
+    color: #ffffff;
+    text-align: center;
+  }
+
