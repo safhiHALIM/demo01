@@ -12,7 +12,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
   
   * {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   /* Réinitialisation globale */
   body {
@@ -63,7 +63,7 @@
   
   /* Section principale avec image de fond */
   .hero-section {
-    height: 100vh;
+    height: 60vh;
     background: url('images/pexels-kaip-996329.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -72,6 +72,7 @@
     color: white;
     position: relative;
     padding-top: 60px; /* Compense la navbar fixe */
+    
   }
   
   /* Overlay sombre pour améliorer la lisibilité du texte */
@@ -115,6 +116,45 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     color: var(--light-color); /* Couleur légère pour le sous-titre */
   }
+/*about*/
+.article{
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-image: url("./images/background.jpg");
+}
+
+video{
+  width: 320px;
+  border-radius: 4px;
+  
+}
+
+.video-container{
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+}
+
+.story {
+  text-align: center;
+
+}
+.counter__section  {
+  font-size: 42px;
+  margin: auto;
+  background-image: url();
+  text-align: center;
+  border: 1px, solid, var(--bleuoff-si);
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.253);
+  
+  background-color: var(--mycolor);
+  border: 1px solid var(--tertiary-color);
+  
+}
   /*services*/
 #services{
     background: url('images/background.jpg') no-repeat center center/cover; 
